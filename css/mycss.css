@@ -10,7 +10,10 @@ html,body {
 		min-height : 100%;
 		background-color : #dbddf9;
 		border-right: 1px solid black;
-		
+	}
+	.meimg{
+		max-width:150px;
+		height: auto;
 	}
 
 }
@@ -20,6 +23,10 @@ html,body {
 		height :55%;
 		max-height : 55%;
 		background-color : #dbddf9;
+	}
+	.meimg{
+		max-width:70px;
+		height: auto;
 	}
 }
 
@@ -41,10 +48,6 @@ html,body {
 
 	}
 	
-.meimg{
-	max-width:150px;
-	height: auto;
-}
 
 h1.name{
 	color: black;
