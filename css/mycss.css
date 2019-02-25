@@ -15,8 +15,8 @@ html,body {
 
 @media (max-width: 1000px){
 	.col-md-4.divme{
-		height :35%;
-		max-height : 35%;
+		height :25%;
+		max-height : 25%;
 		background-color : #dbddf9;
 	}
 }
