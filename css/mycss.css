@@ -1,3 +1,42 @@
-body {
-  background-color: lightblue;
+html,body {
+  background-color: white;
+  height : 150%;
+
 }
+
+@media (min-width: 1000px){
+	.col-md-4.divme{
+		height : 100%;
+		min-height : 100%;
+		background-color : #7087a0;
+		border-right: 1px solid black;
+		
+	}
+
+}
+
+@media (max-width: 1000px){
+	.col-md-4.divme{
+		height : 20%;
+		max-height : 20%;
+		background-color : #7087a0;
+	}
+}
+
+.col-md-8.divblog{
+		height : 100%;
+		min-height : 100%;
+		background-color : #3e4247;
+	}
+	
+.divmeinfo{
+		border : 1px solid black;
+
+		position: absolute;
+		left: 30%;
+		top: 15%;
+		
+		width: 60%;
+		height: 300px;
+
+	}
