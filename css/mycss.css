@@ -1,6 +1,6 @@
 html,body {
   background-color: white;
-  height : 150%;
+  height : 100%;
 
 }
 
@@ -8,7 +8,7 @@ html,body {
 	.col-md-4.divme{
 		height : 100%;
 		min-height : 100%;
-		background-color : #7087a0;
+		background-color : #dbddf9;
 		border-right: 1px solid black;
 		
 	}
@@ -17,26 +17,66 @@ html,body {
 
 @media (max-width: 1000px){
 	.col-md-4.divme{
-		height : 20%;
-		max-height : 20%;
-		background-color : #7087a0;
+		height :55%;
+		max-height : 55%;
+		background-color : #dbddf9;
 	}
 }
 
 .col-md-8.divblog{
 		height : 100%;
 		min-height : 100%;
-		background-color : #3e4247;
+		background-color : #cee8e0;
 	}
 	
 .divmeinfo{
-		border : 1px solid black;
-
 		position: absolute;
-		left: 30%;
+		left: 25%;
 		top: 15%;
 		
 		width: 60%;
 		height: 300px;
+		
+		text-align: center;
 
 	}
+	
+.meimg{
+	max-width:150px;
+	height: auto;
+}
+
+h1.name{
+	color: black;
+}
+h1.blogtitle{
+	color: black;
+}
+
+p.info{
+	color: #0f1c11;
+}
+
+.bloginfodiv{
+	color: #0f1c11;
+	width: 60%;	
+	display: inline-block;
+}
+.blogimagediv{
+	display: inline-block;
+}
+.blogimage{
+	max-width:150px;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
