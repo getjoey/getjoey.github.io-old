@@ -1,6 +1,6 @@
 html,body {
   background-color: white;
-  height : 150%;
+  height : 250%;
 
 }
 
@@ -76,7 +76,7 @@ p.info{
 	height: auto;
 }
 .blogimagebigger{
-	max-width:400px;
+	max-width:370px;
 	height: auto;
 }
 
