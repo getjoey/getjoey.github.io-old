@@ -8,16 +8,16 @@ html,body {
 	.col-md-4.divme{
 		height : 100%;
 		min-height : 100%;
-		background-color : #dbddf9;
+		background-color : #000335;
 		border-right: 1px solid black;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 1000px){
 	.col-md-4.divme{
-		height :25%;
-		max-height : 25%;
-		background-color : #dbddf9;
+		height :30%;
+		max-height : 30%;
+		background-color : #000335;
 	}
 }
 
@@ -25,7 +25,7 @@ html,body {
 	.col-md-4.divme{
 		height :50%;
 		max-height : 50%;
-		background-color : #dbddf9;
+		background-color : #000335;
 	}
 }
 
@@ -37,7 +37,7 @@ html,body {
 .col-md-8.divblog{
 		height : 100%;
 		min-height : 100%;
-		background-color : #cee8e0;
+		background-color :black;
 	}
 	
 .divmeinfo{
@@ -54,18 +54,18 @@ html,body {
 	
 
 h1.name{
-	color: black;
+	color: lightblue;
 }
 h1.blogtitle{
-	color: black;
+	color: lightblue;
 }
 
 p.info{
-	color: #0f1c11;
+	color: grey;
 }
 
 .bloginfodiv{
-	color: #0f1c11;
+	color: grey;
 	width: 85%;	
 }
 .blogimagediv{
