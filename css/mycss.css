@@ -1,7 +1,19 @@
 body {
   background-color: #000335;
   height : auto;
+  width: 99%;
+  overflow-x: hidden;
 
+}
+
+@media only screen and (min-width: 992px) {
+ 
+	.col-md-4.divme{
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+	}
+ 
 }
 	
 .meimg{
@@ -27,7 +39,7 @@ body {
 
 .divmeskills{	
 		margin-top: 500px;
-		margin-left: 70px;	
+		margin-left: 50px;	
 	}
 
 
