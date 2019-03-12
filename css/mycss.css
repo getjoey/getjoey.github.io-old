@@ -3,6 +3,11 @@ body {
   height : auto;
   width: 99%;
   overflow-x: hidden;
+  
+  background-image: url("../images/bkg.jpg"); 
+  background-repeat: repeat-y;
+  
+  font-family: Didact Gothic Font;
 
 }
 
@@ -11,10 +16,15 @@ body {
 	.col-md-4.divme{
 		position: -webkit-sticky;
 		position: sticky;
-		top: 0;
+		top: 0; 
+
+		
+		
 	}
  
 }
+
+
 	
 .meimg{
 		max-width:150px;
@@ -43,25 +53,41 @@ body {
 	}
 
 
+
+
+h1.name{
+	color:lightblue;
+	text-shadow: 2px 2px 4px #000000;
+	
+}
+p.info{
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	font-size: 18px;
+}
+.infolink{
+	color: violet;
+}
 .skilltitle{
-	color: lightblue;
+	color:lightblue;
+	font-size: 24px;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 .skill{
-	color: grey;
+	color: white;
+	font-size: 18px;
+	text-shadow: 2px 2px 4px #000000;
 }
 	
 
-h1.name{
-	color: lightblue;
-}
+
+
+
 h1.blogtitle{
 	color: lightblue;
 }
 
-p.info{
-	color: grey;
-}
 
 .bloginfodiv{
 	color: grey;
