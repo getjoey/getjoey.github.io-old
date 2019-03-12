@@ -92,9 +92,11 @@ h1.blogtitle{
 .bloginfodiv{
 	color: grey;
 	width: 85%;	
+	padding: 2rem;
 }
 .blogimagediv{
 	text-align:left;
+	padding: 2rem;
 }
 .blogimage{
 	max-width:180px;
