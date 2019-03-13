@@ -1,7 +1,7 @@
 body {
   background-color: #000335;
   height : auto;
-  width: 100%;
+  width: auto;
   overflow-x: hidden;
   
   background-image: url("../images/bkg.jpg"); 
@@ -30,7 +30,7 @@ body {
 }
 
 .col-md-8.divblog{
-		background-color :black;
+		background-color :#00001a;
 	}
 	
 .divmeinfo{
@@ -88,7 +88,7 @@ h1.blogtitle{
 
 
 .bloginfodiv{
-	color: grey;
+	color: #c1c1a4; /*medium dark grey*/
 	width: 85%;	
 	padding: 2rem;
 }
