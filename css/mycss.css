@@ -1,13 +1,13 @@
-body, html {
+body {
   background-color: #000335;
   height : auto;
-  width: auto;
+  width: 100%;
   overflow-x: hidden;
   
   background-image: url("../images/bkg.jpg"); 
   background-repeat: repeat-y;
   
-  font-family: Didact Gothic Font;
+  font-family: 'Frank Ruhl Libre';
 
 }
 
@@ -30,13 +30,13 @@ body, html {
 }
 
 .col-md-8.divblog{
-		background-color :#00001a;
+		background-color :#060a11;
 	}
 	
 .divmeinfo{
 		position: absolute;
 		left: 25%;
-		top: 100px;
+		top: 50px;
 		
 		width: 60%;
 		
@@ -46,7 +46,7 @@ body, html {
 	}
 
 .divmeskills{	
-		margin-top: 500px;
+		margin-top: 420px;
 		margin-left: 50px;	
 	}
 
@@ -88,9 +88,10 @@ h1.blogtitle{
 
 
 .bloginfodiv{
-	color: #c1c1a4; /*medium dark grey*/
-	width: 85%;	
-	padding: 2rem;
+	color: #aaafb7;	
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 16px;
 }
 .blogimagediv{
 	text-align:left;
@@ -107,21 +108,24 @@ h1.blogtitle{
 
 
 @media only screen and (max-width: 450px) {
- body {
-  background-color: #000335;
-  height : auto;
-  width: 98%;
-  overflow-x: hidden;
-  
-  background-image: url("../images/bkg.jpg"); 
-  background-repeat: repeat-y;
-  
-  font-family: Didact Gothic Font;
-
-}
-.blogimagebigger{
-	max-width:320px;
-}
+	body 
+	{
+		background-color: #000335;
+		height : auto;
+		width: auto;
+		overflow-x: hidden;
+	  
+		background-image: url("../images/bkg.jpg"); 
+		background-repeat: repeat-y;
+	}
+	.blogimagediv{
+	text-align:center;
+	padding: 2rem;
+	}
+	.blogimagebigger
+	{
+		max-width:320px;
+	}
  
 }
 
