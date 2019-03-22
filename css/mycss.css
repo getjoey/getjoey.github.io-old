@@ -4,24 +4,26 @@ body {
   width: 100%;
   overflow-x: hidden;
   
-  background-image: url("../images/bkg.jpg"); 
-  background-repeat: repeat-y;
-  
   font-family: 'Frank Ruhl Libre';
 
 }
 
 @media only screen and (min-width: 992px) {
  
-	.col-md-4.divme{
+	.col-md-3{
 		position: -webkit-sticky;
 		position: sticky;
-		top: 0; 	
+		top: 0; 
+		height: 100%;		
 	}
  
 }
 
-
+.row.divme{
+	background-image: url("../images/bkg.jpg"); 
+	background-size: contain;
+	height: 100%;
+}
 
 	
 .meimg{
@@ -29,8 +31,10 @@ body {
 		height: auto;
 }
 
-.col-md-8.divblog{
+.col-md-9.divblog{
 		background-color :#060a11;
+		background-image: url("../images/bkg2.jpg"); 
+		background-repeat: repeat-y;
 	}
 	
 .divmeinfo{
@@ -45,9 +49,10 @@ body {
 
 	}
 
-.divmeskills{	
+.col-xs-4.divmeskills{	
 		margin-top: 420px;
-		margin-left: 50px;	
+		
+		
 	}
 
 
@@ -81,11 +86,9 @@ p.info{
 
 
 
-
 h1.blogtitle{
 	color: lightblue;
 }
-
 
 .bloginfodiv{
 	color: #aaafb7;	
@@ -96,6 +99,7 @@ h1.blogtitle{
 .blogimagediv{
 	text-align:left;
 	padding: 2rem;
+	margin: auto;
 }
 .blogimage{
 	max-width:180px;
@@ -116,12 +120,11 @@ h1.blogtitle{
 		width: auto;
 		overflow-x: hidden;
 	  
-		background-image: url("../images/bkg.jpg"); 
-		background-repeat: repeat-y;
 	}
+	
 	.blogimagediv{
-	text-align:center;
-	padding: 2rem;
+		text-align:center;
+		padding: 2rem;
 	}
 	.blogimagebigger
 	{
