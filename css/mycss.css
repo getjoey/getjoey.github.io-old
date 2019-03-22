@@ -19,6 +19,7 @@ body {
  
 }
 
+
 .row.divme{
 	background-image: url("../images/bkgwood.jpg"); 
 	height: 100%;
@@ -37,11 +38,8 @@ body {
 	}
 	
 .divmeinfo{
-		position: absolute;
-		left: 25%;
-		top: 50px;
+		margin-top: 50px;
 		
-		width: 60%;
 		
 		
 		text-align: center;
@@ -49,13 +47,16 @@ body {
 	}
 
 .col-xs-4.divmeskills{	
-		margin-top: 420px;
+		margin-top: 30px;
 		
 		
 	}
 
 
-
+.fab{
+	color: orange;
+	font-size; 22px;
+}
 
 h1.name{
 	color:lightblue;
@@ -65,20 +66,22 @@ h1.name{
 p.info{
 	color: white;
 	text-shadow: 2px 2px 4px #000000;
-	font-size: 18px;
+	font-size: 22px;
 }
 .infolink{
-	color: violet;
+	color: orange;
+	font-size: 22px;
+	padding-right: 2rem;
 }
 .skilltitle{
 	color:lightblue;
-	font-size: 24px;
+	font-size: 28px;
 	text-shadow: 2px 2px 4px #000000;
 }
 
 .skill{
 	color: white;
-	font-size: 18px;
+	font-size: 22px;
 	text-shadow: 2px 2px 4px #000000;
 }
 	
@@ -90,10 +93,10 @@ h1.blogtitle{
 }
 
 .bloginfodiv{
-	color: #aaafb7;	
+	color: #dbe7f9;	
 	padding-left: 2rem;
 	padding-right: 2rem;
-	font-size: 16px;
+	font-size: 22px;
 }
 .blogimagediv{
 	text-align:left;
