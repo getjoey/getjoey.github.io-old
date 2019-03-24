@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Frank Ruhl Libre' rel='stylesheet'>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="css/mycss.css">
 
 <title> getJoey </title>
@@ -73,8 +73,8 @@
 	<!-- Blog column!-->
     <div class="col-md-9 divblog">
 		<!-- About!-->
-		<div class ="row">
-			<div class="col-md-12">
+		<div class ="row" id="0">
+			<div class="col-md-12" >
 				<div class ="bloginfodiv" style="padding-top: 2rem;">
 					<h1 class="blogtitle">About</h1>
 					I'm a simple guy who enjoys complex puzzles.<br/>
@@ -86,7 +86,7 @@
 		<hr>
 		
 		<!-- BLOG POST-->
-		<div class="row">
+		<div class="row" id="1">
 			<div class="col-md-6">
 				<div class ="bloginfodiv">
 					<h1 class="blogtitle">Finance Manager</h1>
@@ -108,7 +108,7 @@
 		</div>
 		<hr>
 		<!-- BLOG POST-->
-		<div class="row">
+		<div class="row" id="2">
 			<div class="col-md-6">
 				<div class ="bloginfodiv">
 					<h1 class="blogtitle">PixelDrawer</h1>
@@ -130,7 +130,7 @@
 		</div>
 		<hr>
 		<!-- BLOG POST-->
-		<div class="row">
+		<div class="row" id="3">
 			<div class="col-md-6">
 				<div class ="bloginfodiv">
 					<h1 class="blogtitle">KijijiScanner</h1>
@@ -151,7 +151,7 @@
 		</div>
 		<hr>
 		<!-- BLOG POST-->
-		<div class="row">
+		<div class="row" id="4">
 			<div class="col-md-6">
 				<div class ="bloginfodiv">
 					<h1 class="blogtitle">2D Seed Map Generator</h1>
@@ -173,7 +173,7 @@
 		</div>
 		<hr>
 		<!-- BLOG POST-->
-		<div class="row">
+		<div class="row" id="5">
 			<div class="col-md-6">
 				<div class ="bloginfodiv">
 					<h1 class="blogtitle">Django Game</h1>
@@ -198,7 +198,7 @@
 		</div>
 		<hr>
 		<!-- BLOG POST-->
-		<div class="row">
+		<div class="row" id="6">
 			<div class="col-md-6">
 				<div class ="bloginfodiv">
 					<h1 class="blogtitle">Discrete Evaluator</h1>
@@ -222,7 +222,7 @@
 		</div>
 		<hr>
 		<!-- BLOG POST-->
-		<div class="row">
+		<div class="row" id="7">
 			<div class="col-md-6">
 				<div class ="bloginfodiv">
 					<h1 class="blogtitle">Recursive Path Finder</h1>
@@ -243,7 +243,7 @@
 		<hr>
 		
 		<!-- BLOG POST-->
-		<div class="row">
+		<div class="row" id="8">
 			<div class="col-md-6">
 				<div class ="bloginfodiv">
 					<h1 class="blogtitle">Trading Bot</h1>
@@ -269,3 +269,69 @@
 	
 </body>
 </html>
+
+
+<script>
+
+done = [9];
+for(var i=0; i<9; i++){
+	document.getElementById(""+i).style.opacity = "0.0";
+	var h = window.innerHeight;
+	var r = document.getElementById(""+i).getBoundingClientRect();		
+	if(r.top < h)
+	{
+		slideIn(""+i);
+	}
+	else
+	{
+		done[i] = false;
+	}
+}
+
+
+
+window.addEventListener('scroll', 
+	function() 
+	{
+		$(document).ready(function(){
+			for(var i=0; i<9; i++)
+			{
+				var h = window.innerHeight;
+				var r = document.getElementById(""+i).getBoundingClientRect();		
+				if(r.top < h/1.6){
+					if(done[i] == false){
+						slideIn(""+i);
+					}
+				}
+			}
+		});
+
+	}	
+);
+
+
+function slideIn(id)
+{
+	var r = document.getElementById(id).getBoundingClientRect();
+	document.getElementById(id).style.opacity = "1.0";
+	document.getElementById(id).style.height = ""+(Math.round(r.height)+ 20)+"px";
+	document.getElementById(id).style.width= "0px";
+	$("#"+id).animate({width: "100%"},500, function()
+		{ 
+		document.getElementById(id).style.height = "auto";
+		});
+	done[id] = true;
+	
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
