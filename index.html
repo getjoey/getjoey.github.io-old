@@ -316,7 +316,7 @@ function slideIn(id)
 	document.getElementById(id).style.opacity = "1.0";
 	document.getElementById(id).style.height = ""+(Math.round(r.height)+ 20)+"px";
 	document.getElementById(id).style.width= "0px";
-	$("#"+id).animate({width: "100%"},500, function()
+	$("#"+id).animate({width: "100%"}, function()
 		{ 
 		document.getElementById(id).style.height = "auto";
 		});
