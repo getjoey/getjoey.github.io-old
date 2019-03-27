@@ -79,7 +79,6 @@
 					<h1 class="blogtitle">About</h1>
 					I'm a simple guy who enjoys complex puzzles.<br/>
 					Avid reader of software Design/Architecture and general literature <br/>
-					What I lack in experience, I make up for in sheer enthusiam.
 				</div>
 			</div>
 		</div>
@@ -99,10 +98,13 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<div class = "blogimagediv">	
-					<a href="https://raw.githubusercontent.com/getjoey/getjoey.github.io/master/images/personalfinancemanager.png">
-						<img class = "blogimagebigger" src="images/personalfinancemanager.png">
+				<div class = "blogimagediv">						
+					<a class="financeSlides" href="https://raw.githubusercontent.com/getjoey/Finance-Manager/master/financeManagerScreenshots/mainview.png">
+						<img class = "blogimagebigger" src="https://raw.githubusercontent.com/getjoey/Finance-Manager/master/financeManagerScreenshots/mainview.png">
 					</a>
+					<a class="financeSlides" href="https://raw.githubusercontent.com/getjoey/Finance-Manager/master/financeManagerScreenshots/billEditorView.png">
+						<img class="blogimagebigger" src="https://raw.githubusercontent.com/getjoey/Finance-Manager/master/financeManagerScreenshots/billEditorView.png">
+					</a>		
 				</div>	
 			</div>
 		</div>
@@ -271,6 +273,7 @@
 </html>
 
 
+
 <script>
 
 done = [9];
@@ -339,26 +342,33 @@ function slideIn2(id)
 	document.getElementById(id).style.opacity = "1.0";
 	document.getElementById(id).style.height = ""+(Math.round(r.height)+ 20)+"px";
 	document.getElementById(id).style.width= "100%";
-	document.getElementById(id).style.height = "auto";
-	
-	/*
-	$("#"+id).animate({width: "100%"}, function()
-		{ 
-		document.getElementById(id).style.height = "auto";
-		});
-	*/
-	
+	document.getElementById(id).style.height = "auto";	
 	$("#"+id).animate({marginLeft: "-=30px"});
 	$("#"+id).animate({marginLeft: "+=60px"});
 	$("#"+id).animate({marginLeft: "-=30px"});
-	//$("#"+id).animate({marginLeft: "0px"});
 	done[id] = true;
-	
 }
 
+
+function carouselFinance() {
+	var i;
+	var x = document.getElementsByClassName("financeSlides");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	myIndexF++;
+	if (myIndexF > x.length) {
+		myIndexF = 1
+	}
+	x[myIndexF-1].style.display = "block";
+	setTimeout(carouselFinance, 3000); //heres the infinite loop
+}
 </script>
 
-
+<script>
+	var myIndexF = 0;
+	carouselFinance();
+</script>
 
 
 
