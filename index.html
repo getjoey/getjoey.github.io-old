@@ -388,7 +388,7 @@ function carouselFinance() {
 		myIndexF = 1
 	}
 	x[myIndexF-1].style.display = "block";
-	setTimeout(carouselFinance, 3000);
+	setTimeout(carouselFinance, 2500);
 }
 
 function carouselRaceCar() {
@@ -397,17 +397,18 @@ function carouselRaceCar() {
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = "none";
 	}
-	myIndexF++;
-	if (myIndexF > x.length) {
-		myIndexF = 1
+	myIndexR++;
+	if (myIndexR > x.length) {
+		myIndexR = 1
 	}
-	x[myIndexF-1].style.display = "block";
+	x[myIndexR-1].style.display = "block";
 	setTimeout(carouselRaceCar, 3000);
 }
 </script>
 
 <script>
 	var myIndexF = 0;
+	var myIndexR = 0;
 	carouselFinance();
 	carouselRaceCar();
 </script>
