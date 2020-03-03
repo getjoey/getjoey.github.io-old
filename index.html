@@ -388,13 +388,28 @@ function carouselFinance() {
 		myIndexF = 1
 	}
 	x[myIndexF-1].style.display = "block";
-	setTimeout(carouselFinance, 3000); //heres the infinite loop
+	setTimeout(carouselFinance, 3000);
+}
+
+function carouselRaceCar() {
+	var i;
+	var x = document.getElementsByClassName("raceCarAiSlides");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	myIndexF++;
+	if (myIndexF > x.length) {
+		myIndexF = 1
+	}
+	x[myIndexF-1].style.display = "block";
+	setTimeout(carouselRaceCar, 3000);
 }
 </script>
 
 <script>
 	var myIndexF = 0;
 	carouselFinance();
+	carouselRaceCar();
 </script>
 
 
